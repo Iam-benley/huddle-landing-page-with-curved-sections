@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [Github Repo](https://github.com/Iam-benley/huddle-landing-page-with-curved-sections)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Live url](https://huddle-landing-page-012723.netlify.app/)
 
 ## My process
 
