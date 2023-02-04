@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Huddle landing page with curved sections</title>
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
 
         <!--  CSS -->
         <link rel="stylesheet" href="style.css" />
@@ -12,24 +17,36 @@
     <body>
         <header>
             <div class="container">
-                <a href="#"><img src="./images/logo.svg" alt="Huddle" /></a>
-                <button type="button">Try it Free</button>
+                <div class="padding-block-600 logo-link-container">
+                    <a href="#" class="logo">
+                        <img src="./images/logo.svg" alt="Huddle-logo" />
+                    </a>
+                    <button type="button" class="transparent-button">
+                        Try it Free
+                    </button>
+                </div>
             </div>
         </header>
         <main>
             <!-- Hero Section -->
-            <section>
+            <section class="hero-section | padding-block-900">
                 <div class="container">
                     <div class="hero">
                         <div class="hero__content">
-                            <h1>Build The Community Your Fans Will Love</h1>
+                            <h1
+                                class="primary-heading ff-accent fw-bold fs-900"
+                            >
+                                Build The Community Your Fans Will Love
+                            </h1>
                             <p>
                                 Huddle re-imagines the way we build communities.
                                 You have a voice, but so does your audience.
                                 Create connections with your users as you engage
                                 in genuine discussion.
                             </p>
-                            <button type="button">Get Started For Free</button>
+                            <button type="button" class="button fs-300 fw-bold">
+                                Get Started For Free
+                            </button>
                         </div>
                         <div class="hero__illustration">
                             <img
@@ -37,21 +54,23 @@
                                 alt="Mockups"
                             />
                         </div>
-                        <div class="hero__card-container">
+                        <div class="hero__card-container even-columns">
                             <div class="card">
                                 <img
                                     src="./images/icon-communities.svg"
                                     alt="icon-communities"
+                                    class="card-icon"
                                 />
-                                <h3>1.4k+</h3>
+                                <h3 class="ff-accent fw-bold fs-1000">1.4k+</h3>
                                 <p>Communities Formed</p>
                             </div>
                             <div class="card">
                                 <img
                                     src="./images/icon-messages.svg"
                                     alt="icon-messages"
+                                    class="card-icon"
                                 />
-                                <h3>2.7m+</h3>
+                                <h3 class="ff-accent fw-bold fs-1000">2.7m+</h3>
                                 <p>Messages Sent</p>
                             </div>
                         </div>
@@ -62,17 +81,19 @@
             <!-- End of Hero Section -->
 
             <!-- Experience Section 1 -->
-            <section>
+            <section class="alternate-bg | padding-block-600">
                 <div class="container">
-                    <div class="experience-section-1">
-                        <div>
+                    <div class="experience-section-1 flex-group">
+                        <div class="illustration-alternate-order">
                             <img
                                 src="./images/illustration-grow-together.svg"
                                 alt="illustration-grow-together"
                             />
                         </div>
-                        <div>
-                            <h2>Grow Together</h2>
+                        <div class="content-padding | text-align-center">
+                            <h2 class="ff-accent fw-bold fs-700">
+                                Grow Together
+                            </h2>
                             <p>
                                 Generate meaningful discussions with your
                                 audience and build a strong, loyal community.
@@ -88,17 +109,19 @@
 
             <!-- Experience Section 2 -->
 
-            <section>
+            <section class="section-2 | padding-block-600">
                 <div class="container">
-                    <div class="experience-section-2">
+                    <div class="experience-section-2 margin-block flex-group">
                         <div>
                             <img
                                 src="./images/illustration-flowing-conversation.svg"
                                 alt="illustration-flowing-conversation"
                             />
                         </div>
-                        <div>
-                            <h2>Flowing Conversations</h2>
+                        <div class="content-padding | text-align-center">
+                            <h2 class="ff-accent fw-bold fs-700">
+                                Flowing Conversations
+                            </h2>
                             <p>
                                 You wouldn't paginate a conversation in real
                                 life, so why do it online? Our threads have
@@ -113,17 +136,17 @@
 
             <!-- Experience Section 3 -->
 
-            <section>
+            <section class="alternate-bg | padding-block-600">
                 <div class="container">
-                    <div class="experience-section-3">
-                        <div>
+                    <div class="experience-section-3 flex-group">
+                        <div class="illustration-alternate-order">
                             <img
                                 src="./images/illustration-your-users.svg"
                                 alt="illustration-your-users"
                             />
                         </div>
-                        <div>
-                            <h2>Your Users</h2>
+                        <div class="content-padding | text-align-center">
+                            <h2 class="ff-accent fw-bold fs-700">Your Users</h2>
                             <p>
                                 It takes no time at all to integrate Huddle with
                                 your app's authentication solution. This means,
@@ -136,51 +159,98 @@
             </section>
             <!-- End of Experience Section 3 -->
 
-            <section>
+            <section class="cta-section | padding-block-900">
                 <div class="container">
                     <div class="cta">
-                        <p>Ready To Build Your Community?</p>
-                        <button>Get Started For Free</button>
+                        <p class="ff-accent fw-bold fs-700 text-align-center">
+                            Ready To Build Your Community?
+                        </p>
+                        <button type="button" class="button fs-300 fw-bold">
+                            Get Started For Free
+                        </button>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="footer-section">
             <div class="container">
-                <div>
-                    <h2>Newsletter</h2>
-                    <p>
-                        To recieve tips on how to grow your community, sign up
-                        to our weekly newsletter. We’ll never send you spam or
-                        pass on your email address
-                    </p>
-                    <form action="#">
-                        <input type="text" />
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-                <div>
-                    <!-- Inverted color Logo -->
-                    <a href="#"><img src="./images/logo.svg" alt="Huddle" /></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris nulla quam, hendrerit lacinia vestibulum a,
-                        ultrices quis sem.
-                    </p>
-                    <div>
-                        <img src="./images/icon-phone.svg" alt="" />
-                        <p>Phone: +1-543-123-4567</p>
+                <div class="footer-container">
+                    <div
+                        class="footer-container__newsletter illustration-alternate-order"
+                    >
+                        <h2 class="ff-accent fw-bold fs-700">Newsletter</h2>
+                        <p>
+                            To recieve tips on how to grow your community, sign
+                            up to our weekly newsletter. We’ll never send you
+                            spam or pass on your email address
+                        </p>
+                        <form action="#" class="footer-form">
+                            <input
+                                type="email"
+                                placeholder="example@huddle.com"
+                                aria-label="your email"
+                                class="footer-form__input"
+                            />
+                            <button type="submit" class="footer-form__button">
+                                Subscribe
+                            </button>
+                        </form>
                     </div>
-                    <div>
-                        <img src="./images/icon-email.svg" alt="" />
-                        <p>example@huddle.com</p>
+                    <div class="footer-container__content">
+                        <!-- Inverted color Logo -->
+                        <div>
+                            <a href="#" class="footer-logo__link">
+                                <img
+                                    src="./images/logo-white.svg"
+                                    alt="Huddle"
+                                />
+                            </a>
+                            <p class="footer-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Mauris nulla quam, hendrerit
+                                lacinia vestibulum a, ultrices quis sem.
+                            </p>
+                        </div>
+                        <div class="contact-info-container">
+                            <div class="contact-info">
+                                <img src="./images/icon-phone.svg" alt="" />
+                                <p>Phone: +1-543-123-4567</p>
+                            </div>
+                            <div class="contact-info">
+                                <img src="./images/icon-email.svg" alt="" />
+                                <p>example@huddle.com</p>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul
+                                class="footer-social-links"
+                                aria-label="social-links"
+                            >
+                                <li>
+                                    <a aria-label="facebook" href="#"
+                                        ><i
+                                            class="fa-brands fa-square-facebook fa-icon"
+                                        ></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a aria-label="instagram" href="#"
+                                        ><i
+                                            class="fa-brands fa-instagram fa-icon"
+                                        ></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a aria-label="twitter" href="#"
+                                        ><i
+                                            class="fa-brands fa-square-twitter fa-icon"
+                                        ></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <ul aria-label="social-links">
-                        <li><a aria-label="facebook" href="#"></a></li>
-                        <li><a aria-label="instagram" href="#"></a></li>
-                        <li><a aria-label="twitter" href="#"></a></li>
-                    </ul>
                 </div>
             </div>
         </footer>
